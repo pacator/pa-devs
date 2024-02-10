@@ -1,0 +1,10 @@
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/kafka/JsonKafkaProducer.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/kafka/JsonKafkaConsumer.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/kafka/KafkaConsumer.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/payload/User.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/SpringbootKafkaTutorialApplication.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/config/KafkaTopicConfig.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/controller/MessageController.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/controller/JsonMessageController.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/utils/AppConstants.java
+/Users/arnout.cator/Dev/kafka/pa-devs/src/main/java/net/javaguides/springboot/kafka/KafkaProducer.java
