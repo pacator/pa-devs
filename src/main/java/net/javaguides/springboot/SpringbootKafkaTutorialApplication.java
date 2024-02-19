@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * author: Arnout Cator
  * Class SpringbootKafkaTutorialApplication
- * Access point consumer
+ * Access point Kafka consumer
+ *
  */
 @SpringBootApplication
 public class SpringbootKafkaTutorialApplication {
