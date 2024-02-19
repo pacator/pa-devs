@@ -31,9 +31,9 @@ on:
     branches: [ "master" ]
 
 env:
-  AWS_REGION: ${{ variables.MY_AWS_REGION }}         # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REGISTRY: ${{ variables.MY_AWS_REGISTRY }}     # set this to your preferred ECR registry ARN
-  ECR_REPOSITORY: ${{ variables.MY_ECR_REPOSITORY }} # set this to your Amazon ECR repository name
+  AWS_REGION:     eu-west-2                                       # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REGISTRY:   009831754594.dkr.ecr.eu-west-2.amazonaws.com    # set this to your preferred ECR registry ARN
+  ECR_REPOSITORY: pa-devs                                         # set this to your Amazon ECR repository name
 
 permissions:
   contents: read
