@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: kafka-kubernetes-demo
-        image: pacator/kafka:latest
+        image: DOCKER_IMAGE
         imagePullPolicy: Always
         ports:
         - containerPort: 9001
