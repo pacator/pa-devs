@@ -1,5 +1,5 @@
 # This workflow will build and push a new container image to Amazon ECR,
-# and then will deploy a new task definition to Amazon ECS, when there is a push to the "master" branch.
+# and then will deploy the application to Amazon EKS, when there is a push to the "master" branch.
 #
 # To use this workflow, you will need to complete the following set-up steps:
 #
@@ -34,6 +34,7 @@ env:
   AWS_REGION:     eu-west-2                                       # set this to your preferred AWS region, e.g. us-west-1
   ECR_REGISTRY:   009831754594.dkr.ecr.eu-west-2.amazonaws.com    # set this to your preferred ECR registry ARN
   ECR_REPOSITORY: pa-devs                                         # set this to your Amazon ECR repository name
+  EKS_CLUSTER_NAME: pacator-eks-cluster                           # set this to your Amazon EKS cluster name
 
 permissions:
   contents: read
@@ -71,4 +72,18 @@ jobs:
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+      - name: Update kube config
+        run: aws eks update-kubeconfig --name $EKS_CLUSTER_NAME --region $AWS_REGION
+
+      - name: Deploy to EKS
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          sed -i.bak "s|DOCKER_IMAGE|$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG|g" src/main/resources/demo-application.yml && \
+          kubectl apply -f src/main/resources/demo-application.yml
+          kubectl apply -f src/main/resources/demo-ingress.yml
+          kubectl apply -f src/main/resources/kafka.yml
+
           
