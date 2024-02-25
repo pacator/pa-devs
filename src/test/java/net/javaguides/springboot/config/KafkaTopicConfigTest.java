@@ -28,7 +28,6 @@ public class KafkaTopicConfigTest {
         NewTopic topic = kafkaTopicConfig.javaguidesTopic();
         assertNotNull(topic);
         assertEquals("testTopic", topic.name());
-        // Add more assertions as per your requirements
     }
 
     @Test
@@ -36,6 +35,5 @@ public class KafkaTopicConfigTest {
         NewTopic topic = kafkaTopicConfig.javaguidesJsonTopic();
         assertNotNull(topic);
         assertEquals("testJsonTopic", topic.name());
-        // Add more assertions as per your requirements
     }
 }
