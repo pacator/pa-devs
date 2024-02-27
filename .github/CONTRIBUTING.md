@@ -18,4 +18,4 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Contributor Code of Conduct
 
-Please see [Code of Conduct](./CODE_OF_CONDUCT.md)
+Please see [Code of Conduct](CODE_OF_CONDUCT.md)
