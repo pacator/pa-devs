@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: net.javaguides.springboot.config.KafkaTopicConfigTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.172 s <<< FAILURE! -- in net.javaguides.springboot.config.KafkaTopicConfigTest
-net.javaguides.springboot.config.KafkaTopicConfigTest.testJavaguidesJsonTopicBeanCreation -- Time elapsed: 0.003 s <<< ERROR!
-org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [net.javaguides.springboot.config.KafkaTopicConfig kafkaTopicConfig] in constructor [public net.javaguides.springboot.config.KafkaTopicConfigTest(net.javaguides.springboot.config.KafkaTopicConfig)].
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-net.javaguides.springboot.config.KafkaTopicConfigTest.testJavaguidesTopicBeanCreation -- Time elapsed: 0.001 s <<< ERROR!
-org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [net.javaguides.springboot.config.KafkaTopicConfig kafkaTopicConfig] in constructor [public net.javaguides.springboot.config.KafkaTopicConfigTest(net.javaguides.springboot.config.KafkaTopicConfig)].
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.940 s -- in net.javaguides.springboot.config.KafkaTopicConfigTest

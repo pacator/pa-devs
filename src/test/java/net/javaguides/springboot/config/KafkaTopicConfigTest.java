@@ -5,8 +5,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -14,14 +16,11 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @TestPropertySource(locations="classpath:test.properties")
+@ContextConfiguration(classes=KafkaTopicConfig.class, loader= AnnotationConfigContextLoader.class)
 public class KafkaTopicConfigTest {
 
     @Autowired
-    private final KafkaTopicConfig kafkaTopicConfig;
-
-    public KafkaTopicConfigTest(KafkaTopicConfig kafkaTopicConfig) {
-        this.kafkaTopicConfig = kafkaTopicConfig;
-    }
+    private KafkaTopicConfig kafkaTopicConfig;
 
     @Test
     public void testJavaguidesTopicBeanCreation() {
