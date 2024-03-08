@@ -1,4 +1,5 @@
 net/javaguides/springboot/kafka/KafkaConsumer.class
+net/javaguides/springboot/utils/LoggerWrapper.class
 net/javaguides/springboot/kafka/JsonKafkaConsumer.class
 net/javaguides/springboot/controller/MessageController.class
 net/javaguides/springboot/kafka/JsonKafkaProducer.class
