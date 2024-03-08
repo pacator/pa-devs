@@ -2,6 +2,7 @@
 /Users/arnout.cator/Dev/pa-github-devs/src/main/java/net/javaguides/springboot/kafka/KafkaProducer.java
 /Users/arnout.cator/Dev/pa-github-devs/src/main/java/net/javaguides/springboot/payload/User.java
 /Users/arnout.cator/Dev/pa-github-devs/src/main/java/net/javaguides/springboot/config/KafkaTopicConfig.java
+/Users/arnout.cator/Dev/pa-github-devs/src/main/java/net/javaguides/springboot/utils/LoggerWrapper.java
 /Users/arnout.cator/Dev/pa-github-devs/src/main/java/net/javaguides/springboot/kafka/JsonKafkaConsumer.java
 /Users/arnout.cator/Dev/pa-github-devs/src/main/java/net/javaguides/springboot/kafka/KafkaConsumer.java
 /Users/arnout.cator/Dev/pa-github-devs/src/main/java/net/javaguides/springboot/controller/MessageController.java
