@@ -1,0 +1,11 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  -   repo: local
+      hooks:
+        -   id: jira-ticket
+            name: check for jira ticket
+            language: pygrep
+            entry: '\A(?![A-Z]+-[0-9]+)'
+            args: [--multiline]
+            stages: [commit-msg]
